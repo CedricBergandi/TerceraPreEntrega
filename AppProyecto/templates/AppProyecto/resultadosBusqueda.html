@@ -1,0 +1,14 @@
+<p>Estamos buscando el: {{marca}}</p>
+
+{% if productos %}
+
+<ul>
+    {% for producto in productos %}
+    <li> Descripcion: {{producto.descripcion}}</li>
+    <li> Marca: {{producto.marca}}</li>
+    <li> Unidad de medida: {{producto.unidad_de_medida}}</li>
+    <li> Precio: {{producto.precio}}</li>
+    {% endfor %}
+</ul>
+
+{% endif %}
